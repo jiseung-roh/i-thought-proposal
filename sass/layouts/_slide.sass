@@ -10,7 +10,9 @@
 		font-size: 48px
 	cite
 		@extend %text-default
-		font-style: normal
+		font:
+			size: 12px
+			style: normal
 
 // slide common
 .index
@@ -71,10 +73,20 @@
 	background-position: right, center
 	background-size: 100%, cover
 
-// slide-6
-.slide-6
-	background-image
-
+// slide-8
+.schedule
+	width: 100%
+	border-collapse: collapse
+	thead > tr
+		padding: 0
+		border-bottom: 1px solid $text-color
+		text-align: left
+	th, tr
+		width: 25%
+		vertical-align: top
+		font-size: 12px
+	tbody > tr > td
+		padding-top: 0.3em
 
 // slide-9
 .profile-wrapper
