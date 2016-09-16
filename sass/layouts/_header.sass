@@ -1,0 +1,40 @@
+.pg-header
+	+dimension(100%, auto)
+	position: fixed
+	z-index: 100
+	top: 0
+	left: 0
+
+.tags
+	+dimension(100%, 42px)
+	position: relative
+	.tag
+		+reset-anchor
+		+hover-opacity
+		display: inline-block
+		position: absolute
+		top: 1.5rem
+		&:first-child
+			left: 2rem
+		&:last-child
+			right: 2rem
+
+.fp-controlArrow
+	+transition
+	position: fixed
+	z-index: 200
+	right: 2.5rem
+	top: 50%
+	width: 2rem
+	height: 2rem
+	margin-top: -35px
+	background-image: url(../asset/arrow.svg)
+	background-size: contain
+	background-position: center
+	&:hover
+		animation: toggleArrow 1s infinite alternate
+		@keyframes toggleArrow
+			0%
+				right: 2.5rem
+			100%
+				right: 1.6rem
