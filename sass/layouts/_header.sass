@@ -26,13 +26,16 @@
 	position: fixed
 	z-index: 200
 	right: 2.5rem
-	top: 50%
 	width: 2rem
 	height: 2rem
-	margin-top: -35px
 	background-image: url(../asset/arrow.svg)
 	background-size: contain
 	background-position: center
+	+responsive($gb-screen)
+		top: 50%
+		margin-top: -35px
+	+responsive($xs-screen)
+		top: 2.5rem
 	&:hover
 		animation: toggleArrow 1s infinite alternate
 		@keyframes toggleArrow

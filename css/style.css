@@ -74,13 +74,24 @@ html {
   position: fixed;
   z-index: 200;
   right: 2.5rem;
-  top: 50%;
   width: 2rem;
   height: 2rem;
-  margin-top: -35px;
   background-image: url(../asset/arrow.svg);
   background-size: contain;
   background-position: center;
+}
+
+@media screen and (min-width: 651px) {
+  .fp-controlArrow {
+    top: 50%;
+    margin-top: -35px;
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 650px) {
+  .fp-controlArrow {
+    top: 2.5rem;
+  }
 }
 
 .fp-controlArrow:hover {
