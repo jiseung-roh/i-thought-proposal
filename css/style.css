@@ -219,12 +219,6 @@ html {
   }
 }
 
-.slide-1 {
-  background-image: url(../asset/mockup-1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 .brand {
   font-size: 48px;
   font-weight: 100;
