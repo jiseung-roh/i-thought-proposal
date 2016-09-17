@@ -129,6 +129,10 @@ html {
   background-color: rgba(76, 128, 241, 0.3);
 }
 
+.guide {
+  font-size: 12px;
+}
+
 .title {
   margin-bottom: 0.6em;
   font-size: 24px;
